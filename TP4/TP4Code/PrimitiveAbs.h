@@ -10,6 +10,7 @@
 
 #include "Objet3DAbs.h"
 
+
 class PrimitiveAbs : public Objet3DAbs
 {
 public:

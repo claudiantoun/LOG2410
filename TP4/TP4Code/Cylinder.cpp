@@ -6,6 +6,7 @@
 ///////////////////////////////////////////////////////////
 
 #include "Cylinder.h"
+#include <cstddef>
 
 Cylinder::Cylinder(const Point3D& pt, float r, float ht)
 : PrimitiveAbs(pt)
