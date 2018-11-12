@@ -21,8 +21,8 @@ Sphere::~Sphere(){
 Sphere * Sphere::clone() const
 {
 	// A Completer...
-	Sphere* nouvelleSphere = new Sphere(this->m_center, this->m_radius);
-	return nouvelleSphere;
+	//Sphere* nouvelleSphere = new Sphere(this->m_center, this->m_radius);
+	return new Sphere(this->m_center, this->m_radius);
 }
 
 size_t Sphere::getNbParameters() const {

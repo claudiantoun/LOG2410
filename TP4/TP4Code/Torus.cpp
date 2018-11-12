@@ -54,7 +54,7 @@ void Torus::setParameter(size_t pIndex, float pValue)
 
 std::ostream & Torus::toStream(std::ostream & o) const
 {
-	return o << "Torus:  center = " << m_center
+	return o << "Torus:	   center = " << m_center
 		<< "; r = " << m_dimensions[0]
 		<< "; R = " << m_dimensions[1] << ";";
 }

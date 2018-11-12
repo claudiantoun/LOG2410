@@ -8,56 +8,68 @@
 #include "Objet3DComposite.h"
 
 
-Objet3DComposite::Objet3DComposite(){
-
+Objet3DComposite::Objet3DComposite()
+{
 }
 
 Objet3DComposite::Objet3DComposite(const Objet3DComposite & mdd)
 {
 	// A Completer...
+	for (int i = 0; i < mdd.m_objetContainer.size(); i++)
+		addChild(*mdd.m_objetContainer[i]);
+
+	this->outputIndent = mdd.outputIndent;
 }
 
-Objet3DComposite::~Objet3DComposite(){
+Objet3DComposite::~Objet3DComposite()
+{
 }
 
 Objet3DComposite * Objet3DComposite::clone() const
 {
-	return nullptr;
+	//A Completer...
+	Objet3DComposite clone(*this);
+	return new Objet3DComposite(clone);
 }
 
 void Objet3DComposite::addChild(const Objet3DAbs& obj3d)
 {
 	// A Completer...
+	m_objetContainer.push_back(Objet3DPtr(obj3d.clone()));
 }
 
-Objet3DIterator Objet3DComposite::begin(){
-
+Objet3DIterator Objet3DComposite::begin()
+{
 	// A Completer...
-	return Objet3DBaseIterator();
+	Objet3DIterator it = m_objetContainer.begin();
+	return it;
 }
 
-Objet3DIterator_const Objet3DComposite::cbegin() const {
-
+Objet3DIterator_const Objet3DComposite::cbegin() const
+{
 	// A Completer...
-	return Objet3DBaseIterator();
+	Objet3DIterator_const it = m_objetContainer.begin();
+	return it;
 }
 
-Objet3DIterator_const Objet3DComposite::cend() const {
-
+Objet3DIterator_const Objet3DComposite::cend() const
+{
 	// A Completer...
-	return Objet3DBaseIterator();
+	Objet3DIterator_const it = m_objetContainer.end();
+	return it;
 }
 
-Objet3DIterator Objet3DComposite::end(){
-
+Objet3DIterator Objet3DComposite::end()
+{
 	// A Completer...
-	return Objet3DBaseIterator();
+	Objet3DIterator it = m_objetContainer.end();
+	return it;
 }
 
-Point3D Objet3DComposite::getCenter() const {
-	
+Point3D Objet3DComposite::getCenter() const
+{	
 	// A Completer...
-	return Point3D();
+	return computeCenter();
 }
 
 size_t Objet3DComposite::getNbParameters() const 
@@ -65,27 +77,34 @@ size_t Objet3DComposite::getNbParameters() const
 	return 0;
 }
 
-PrimitiveParams Objet3DComposite::getParameters() const {
-
+PrimitiveParams Objet3DComposite::getParameters() const
+{
 	return  PrimitiveParams();
 }
 
 void Objet3DComposite::removeChild(Objet3DIterator_const obj3dIt)
 {
 	// A Completer...
+	m_objetContainer.erase(obj3dIt);
 }
 
 void Objet3DComposite::moveCenter(const Point3D & delta)
 {
 	// A Completer...
+	for (int i = 0; m_objetContainer.size(); i++)
+		m_objetContainer[i]->moveCenter(delta);
 }
 
-void Objet3DComposite::setCenter(const Point3D& center){
+void Objet3DComposite::setCenter(const Point3D& center)
+{
 	// A Completer...
+	Point3D diff = center - getCenter();
+	for (int i = 0; m_objetContainer.size(); i++)
+		m_objetContainer[i]->moveCenter(diff);
 }
 
-void Objet3DComposite::setParameter(size_t pIndex, float pValue){
-
+void Objet3DComposite::setParameter(size_t pIndex, float pValue)
+{
 }
 
 Point3D Objet3DComposite::computeCenter() const
@@ -94,8 +113,19 @@ Point3D Objet3DComposite::computeCenter() const
 	// S'il n'y a pas d'enfant, initialise a (0,0,0)
 
 	// A Completer...
-	Point3D m_center;
-	return m_center;
+	Point3D m_center(0, 0, 0);
+
+	if (m_objetContainer.size() == 0)
+		return m_center;
+
+	else
+	{
+		for (int i = 0; i < m_objetContainer.size(); i++)
+			m_center += m_objetContainer[i]->getCenter();
+
+		m_center /= m_objetContainer.size();
+		return m_center;
+	}
 }
 
 // Variable statique permettant de stocker le niveau d'indentation

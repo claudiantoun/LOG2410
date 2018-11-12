@@ -25,8 +25,8 @@ Cylinder::~Cylinder(){
 Cylinder * Cylinder::clone() const
 {
 	// A Completer...
-	Cylinder* nouveauCylindre = new Cylinder(this->m_center, this->m_dimensions[0], this->m_dimensions[1]);
-	return nouveauCylindre;
+	//Cylinder* nouveauCylindre = new Cylinder(this->m_center, this->m_dimensions[0], this->m_dimensions[1]);
+	return new Cylinder(this->m_center, this->m_dimensions[0], this->m_dimensions[1]);
 }
 
 size_t Cylinder::getNbParameters() const {

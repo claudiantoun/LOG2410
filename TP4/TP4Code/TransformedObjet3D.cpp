@@ -17,11 +17,12 @@ TransformedObjet3D::TransformedObjet3D(const TransformedObjet3D & mdd)
 {
 }
 
-TransformedObjet3D::~TransformedObjet3D(){
-
+TransformedObjet3D::~TransformedObjet3D()
+{
 }
 
-void TransformedObjet3D::addChild(const Objet3DAbs& obj3d){
+void TransformedObjet3D::addChild(const Objet3DAbs& obj3d)
+{
 	// Deleguer a l'objet decore la tache d'ajouter un enfant
 }
 
@@ -33,15 +34,15 @@ Objet3DIterator TransformedObjet3D::begin()
 }
 
 
-Objet3DIterator_const TransformedObjet3D::cbegin() const {
-
+Objet3DIterator_const TransformedObjet3D::cbegin() const
+{
 	// A Completer...
 	return Objet3DBaseIterator();
 }
 
 
-Objet3DIterator_const TransformedObjet3D::cend() const {
-
+Objet3DIterator_const TransformedObjet3D::cend() const
+{
 	// A Completer...
 	return Objet3DBaseIterator();
 }
@@ -82,7 +83,8 @@ PrimitiveParams TransformedObjet3D::getParameters() const
 }
 
 
-void TransformedObjet3D::moveCenter(const Point3D& delta){
+void TransformedObjet3D::moveCenter(const Point3D& delta)
+{
 	// A Completer...
 }
 
@@ -94,7 +96,8 @@ void TransformedObjet3D::removeChild(Objet3DIterator_const obj3dIt)
 }
 
 
-void TransformedObjet3D::setCenter(const Point3D& center){
+void TransformedObjet3D::setCenter(const Point3D& center)
+{
 	// A Completer...
 }
 
