@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Cube">
+    <Position X="3.75" Y="10.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAEAAAEgAAAAAACBAAAAEAAABAA=</HashCode>
+      <FileName>C:\Users\claud\Desktop\LOG2410 - TP1\LOG2410\TP4\TP4Code\Cube.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cylinder">
+    <Position X="8.25" Y="10.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAEAAAEgAAAAAACAAAQAEAAABAA=</HashCode>
+      <FileName>C:\Users\claud\Desktop\LOG2410 - TP1\LOG2410\TP4\TP4Code\Cylinder.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Objet3DAbs">
+    <Position X="7" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAABABBEAAAExAAACACSAAAAAEgAAAAI=</HashCode>
+      <FileName>C:\Users\claud\Desktop\LOG2410 - TP1\LOG2410\TP4\TP4Code\Objet3DAbs.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Objet3DComposite">
+    <Position X="0.5" Y="1.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAACACAAAABARBEAAAGwAAACACCAAAAAEgABAAI=</HashCode>
+      <FileName>C:\Users\claud\Desktop\LOG2410 - TP1\LOG2410\TP4\TP4Code\Objet3DComposite.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Objet3DIterator">
+    <Position X="17.75" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAgAAAAACA=</HashCode>
+      <FileName>C:\Users\claud\Desktop\LOG2410 - TP1\LOG2410\TP4\TP4Code\Objet3DContainer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Objet3DIterator_const">
+    <Position X="19.75" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAAgAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>C:\Users\claud\Desktop\LOG2410 - TP1\LOG2410\TP4\TP4Code\Objet3DContainer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Point3D">
+    <Position X="17.5" Y="2.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAAAAQAAEABAAAAAAABgAQAAAAA=</HashCode>
+      <FileName>C:\Users\claud\Desktop\LOG2410 - TP1\LOG2410\TP4\TP4Code\Point3D.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PrimitiveAbs">
+    <Position X="6.5" Y="5.75" Width="2.75" />
+    <InheritanceLine Type="Objet3DAbs" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="7.875" Y="4.488" />
+        <Point X="7.875" Y="4.781" />
+        <Point X="7.875" Y="4.781" />
+        <Point X="7.875" Y="5.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AQAAAAACAAAAAABEBBAAAAAQAEECACAAAAAAAgAAAAI=</HashCode>
+      <FileName>C:\Users\claud\Desktop\LOG2410 - TP1\LOG2410\TP4\TP4Code\PrimitiveAbs.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sphere">
+    <Position X="6" Y="10.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAUAAAEgAAAAAACAAAAAEAAIAAA=</HashCode>
+      <FileName>C:\Users\claud\Desktop\LOG2410 - TP1\LOG2410\TP4\TP4Code\Sphere.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Torus">
+    <Position X="10.25" Y="10.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAEgAAAAAACgAAAAkAAABAA=</HashCode>
+      <FileName>C:\Users\claud\Desktop\LOG2410 - TP1\LOG2410\TP4\TP4Code\Torus.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TP4_Test">
+    <Position X="19.75" Y="2.5" Width="2" />
+    <NestedTypes>
+      <Enum Name="TP4_Test::RESULTAT" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>C:\Users\claud\Desktop\LOG2410 - TP1\LOG2410\TP4\TP4Code\TP4_Test.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAAAAABAAAQAAAAAAAEAQAACAAAAAA=</HashCode>
+      <FileName>C:\Users\claud\Desktop\LOG2410 - TP1\LOG2410\TP4\TP4Code\TP4_Test.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TransformedObjet3D">
+    <Position X="13.25" Y="1.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEBCAAAAAKBABBEAAAEwAAAiICCCAAAAEgACACI=</HashCode>
+      <FileName>C:\Users\claud\Desktop\LOG2410 - TP1\LOG2410\TP4\TP4Code\TransformedObjet3D.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

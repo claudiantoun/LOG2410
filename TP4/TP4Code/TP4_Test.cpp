@@ -9,6 +9,7 @@
 #include "Cube.h"
 #include "Cylinder.h"
 #include "Sphere.h"
+//#include "Torus.h"
 
 
 TP4_Test::TP4_Test()
