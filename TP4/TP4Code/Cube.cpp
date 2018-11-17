@@ -27,7 +27,6 @@ Cube::~Cube(){
 Cube * Cube::clone() const
 {
 	// A Completer...
-	//Cube* nouveauCube = new Cube(this->m_center, this->m_dimensions[0], this->m_dimensions[1], this->m_dimensions[2]);
 	return new Cube(this->m_center, this->m_dimensions[0], this->m_dimensions[1], this->m_dimensions[2]);
 }
 

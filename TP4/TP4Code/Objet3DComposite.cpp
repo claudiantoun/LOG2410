@@ -28,7 +28,6 @@ Objet3DComposite::~Objet3DComposite()
 Objet3DComposite * Objet3DComposite::clone() const
 {
 	// A Completer...
-	// Objet3DComposite cloneObject(*this);
 	return new Objet3DComposite(*this);
 }
 
