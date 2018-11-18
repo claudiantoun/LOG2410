@@ -15,8 +15,9 @@ Objet3DComposite::Objet3DComposite()
 Objet3DComposite::Objet3DComposite(const Objet3DComposite & mdd)
 {
 	// A Completer...
-	for (int i = 0; i < mdd.m_objetContainer.size(); i++)
-		addChild(*mdd.m_objetContainer[i]);
+	//for (int i = 0; i < mdd.m_objetContainer.size(); i++) - Modification pour Partie 4 Q3
+	for (auto it = mdd.cbegin(); it != mdd.cend(); it++)
+		addChild(*it);
 
 	this->outputIndent = mdd.outputIndent;
 }
@@ -90,16 +91,18 @@ void Objet3DComposite::removeChild(Objet3DIterator_const obj3dIt)
 void Objet3DComposite::moveCenter(const Point3D & delta)
 {
 	// A Completer...
-	for (int i = 0; m_objetContainer.size(); i++)
-		m_objetContainer[i]->moveCenter(delta);
+	//for (int i = 0; m_objetContainer.size(); i++) - Modification pour Partie 4 Q3
+	for (auto it = begin(); it != end(); it++)
+		it->moveCenter(delta);
 }
 
 void Objet3DComposite::setCenter(const Point3D& center)
 {
 	// A Completer...
 	Point3D diff = center - getCenter();
-	for (int i = 0; m_objetContainer.size(); i++)
-		m_objetContainer[i]->moveCenter(diff);
+	//for (int i = 0; m_objetContainer.size(); i++) - Modification pour Partie 4 Q3
+	for (auto it = begin(); it != end(); it++)
+		it->moveCenter(diff);
 }
 
 void Objet3DComposite::setParameter(size_t pIndex, float pValue)
@@ -119,8 +122,9 @@ Point3D Objet3DComposite::computeCenter() const
 
 	else
 	{
-		for (int i = 0; i < m_objetContainer.size(); i++)
-			m_center += m_objetContainer[i]->getCenter();
+		//for (int i = 0; i < m_objetContainer.size(); i++) - Modification Partie 4 Q3
+		for (auto it = cbegin(); it != cend(); it++)
+			m_center += it->getCenter();
 
 		m_center /= m_objetContainer.size();
 		return m_center;
