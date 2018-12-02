@@ -4,7 +4,7 @@
 
 #include "TP5_Test.h"
 
-#define INTERACTIF
+//#define INTERACTIF
 
 int main(int argc, char** argv)
 {

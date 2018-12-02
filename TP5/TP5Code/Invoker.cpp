@@ -40,9 +40,10 @@ void Invoker::undo()
 
 	if (m_cmdDone.size() != 0) 
 	{
+		CmdPtr cmdPtr = m_cmdDone.back();
 		m_cmdDone.back()->cancel();
 		m_cmdDone.pop_back();
-		m_cmdUndone.push_back(m_cmdDone.back());
+		m_cmdUndone.push_back(cmdPtr);
 	}
 	else
 	{
@@ -62,9 +63,10 @@ void Invoker::redo()
 
 	if (m_cmdUndone.size() != 0) 
 	{
-		m_cmdUndone.back()->execute();
+		CmdPtr cmdPtr = m_cmdUndone.back();
+		cmdPtr->execute();
 		m_cmdUndone.pop_back();
-		m_cmdDone.push_back(m_cmdUndone.back());
+		m_cmdDone.push_back(cmdPtr);
 	}
 	else
 	{
