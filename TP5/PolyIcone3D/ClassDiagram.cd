@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CommandAbs">
+    <Position X="3" Y="5.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAEAAAAAAQAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\claud\Desktop\LOG2410\LOG2410\TP5\TP5Code\CommandAbs.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cube" Collapsed="true">
+    <Position X="3" Y="3.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACgAAAAAAAAAAEAAAEgAAAAAACBAAAAEAAABAA=</HashCode>
+      <FileName>C:\Users\claud\Desktop\LOG2410\LOG2410\TP5\TP5Code\Cube.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cylinder" Collapsed="true">
+    <Position X="7.5" Y="3.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>IAAAAACAAAAAAAAAAAEAAAEgAAAAAACAAAQAEAAABAA=</HashCode>
+      <FileName>C:\Users\claud\Desktop\LOG2410\LOG2410\TP5\TP5Code\Cylinder.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Invoker" Collapsed="true">
+    <Position X="12.25" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEEACAAAAIAAAEEAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\claud\Desktop\LOG2410\LOG2410\TP5\TP5Code\Invoker.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Object3DAbs" Collapsed="true">
+    <Position X="5.25" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>BAAAIACCAAAAAABABBEAAAEwAAALICCAAAAAEkAAAAI=</HashCode>
+      <FileName>C:\Users\claud\Desktop\LOG2410\LOG2410\TP5\TP5Code\Object3DAbs.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Object3DComposite" Collapsed="true">
+    <Position X="0.75" Y="1.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AACAIACCAAAAAAJABBEAAAGyAAACACCAAAAAEoAAAAI=</HashCode>
+      <FileName>C:\Users\claud\Desktop\LOG2410\LOG2410\TP5\TP5Code\Object3DComposite.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Object3DIterator" Collapsed="true">
+    <Position X="14" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAgAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>C:\Users\claud\Desktop\LOG2410\LOG2410\TP5\TP5Code\Object3DContainer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Object3DIterator_const" Collapsed="true">
+    <Position X="15.75" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>C:\Users\claud\Desktop\LOG2410\LOG2410\TP5\TP5Code\Object3DContainer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Object3DVisitorAbs" Collapsed="true">
+    <Position X="2" Y="12" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAEAAAAACAAAAgEAAAACIgAAAAAAAAAE=</HashCode>
+      <FileName>C:\Users\claud\Desktop\LOG2410\LOG2410\TP5\TP5Code\Object3DVisitorAbs.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Point3D" Collapsed="true">
+    <Position X="12.25" Y="1.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAAAAQAAEABAAAAAAABgAQAAAAA=</HashCode>
+      <FileName>C:\Users\claud\Desktop\LOG2410\LOG2410\TP5\TP5Code\Point3D.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PrimitiveAbs" Collapsed="true">
+    <Position X="6.5" Y="1.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AQAAIACCAAAAAABEBBAAAAAQAEECACAAAAAAEgAAAAI=</HashCode>
+      <FileName>C:\Users\claud\Desktop\LOG2410\LOG2410\TP5\TP5Code\PrimitiveAbs.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SelectPrimitiveCmd">
+    <Position X="3" Y="8" Width="2" />
+    <InheritanceLine Type="CommandAbs" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="3.875" Y="7.18" />
+        <Point X="3.875" Y="7.876" />
+        <Point X="3.875" Y="7.876" />
+        <Point X="3.875" Y="8" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AIBBYAAAAAAAAAAAAAAMAQAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\claud\Desktop\LOG2410\LOG2410\TP5\TP5Code\SelectPrimitiveCmd.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sphere" Collapsed="true">
+    <Position X="9.75" Y="3.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAIAAAAAAUAAAEgAAAAAACAAAAAEAAIAAA=</HashCode>
+      <FileName>C:\Users\claud\Desktop\LOG2410\LOG2410\TP5\TP5Code\Sphere.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TP5_Test" Collapsed="true">
+    <Position X="14" Y="1.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAACAAAAAAAABBQAQAAAAAAAFAQAAAAAAABA=</HashCode>
+      <FileName>C:\Users\claud\Desktop\LOG2410\LOG2410\TP5\TP5Code\TP5_Test.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TransformCmd">
+    <Position X="0.75" Y="8" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAEiAAQAAEAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\claud\Desktop\LOG2410\LOG2410\TP5\TP5Code\TransformCmd.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TransformedObject3D" Collapsed="true">
+    <Position X="5.25" Y="3.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAQAACCAAAAAKBABBEAAAEwAAAiADCCAAAAEgACAKI=</HashCode>
+      <FileName>C:\Users\claud\Desktop\LOG2410\LOG2410\TP5\TP5Code\TransformedObject3D.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VisitorPrimitiveSelector" Collapsed="true">
+    <Position X="0.5" Y="13.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AIABIECAAAAAAAAAAAACAQBAgRAAAACAgAACAAAAAAE=</HashCode>
+      <FileName>C:\Users\claud\Desktop\LOG2410\LOG2410\TP5\TP5Code\VisitorPrimitiveSelector.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VisitorXMLWriter" Collapsed="true">
+    <Position X="4" Y="13.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACkAAAEQAAAAAACAQAAgAAAAACAgAAAAEAAAAE=</HashCode>
+      <FileName>C:\Users\claud\Desktop\LOG2410\LOG2410\TP5\TP5Code\VisitorXMLWriter.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XMLPrintCmd">
+    <Position X="5.5" Y="8" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AQBAQAAAAAAIAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\claud\Desktop\LOG2410\LOG2410\TP5\TP5Code\XMLPrintCmd.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="PRIMITIVE_TYPE" Collapsed="true">
+    <Position X="12.25" Y="2.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAQAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>C:\Users\claud\Desktop\LOG2410\LOG2410\TP5\TP5Code\PrimitiveType.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -184,6 +184,9 @@
     <ClCompile Include="..\TP5Code\VisitorXMLWriter.cpp" />
     <ClCompile Include="..\TP5Code\XMLPrintCmd.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
